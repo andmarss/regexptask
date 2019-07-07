@@ -23,7 +23,11 @@ function getPasswordSumAndWallet(string $text): array {
 $text = "Пароль: 9159
 Спишется 111,56р.
 Перевод на счет 410012156350833";
-
+/**
+ * @var string $password
+ * @var string $sum
+ * @var string $wallet
+ */
 [$password, $sum, $wallet] = getPasswordSumAndWallet($text);
 
 var_dump($password, $sum, $wallet);
